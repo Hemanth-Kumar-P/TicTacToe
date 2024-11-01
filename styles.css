@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2e2e2e; /* Dark grey background */
+    margin: 0;
+    color: #d3d3d3; /* Light grey for general text */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3e3e3e; /* Slightly lighter dark grey for cells */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 80px;
+    color: #d3d3d3; /* Default light grey text */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.cell.x {
+    color: #4da6ff; /* Bright blue for X */
+    text-shadow: 0 0 10px #4da6ff;
+}
+
+.cell.o {
+    color: #ff99cc; /* Bright pink for O */
+    text-shadow: 0 0 10px #ff99cc;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4CAF50; /* Light green button */
+    color: #ffffff; /* White button text */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#status {
+    font-size: 18px;
+    color: #d3d3d3; /* Light grey for the status text */
+    margin-bottom: 10px;
+}
